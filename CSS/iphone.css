@@ -1,0 +1,1092 @@
+/*
+	Project:	Clearly Better Diesel
+	Agency:		KBS+ | Kirshenbaum Bond Senecal + Partners
+	Designers:	Cesar Rubin, Jonathan Serrano, Kevin Keehn, Sevan Darakjian
+	Producer:	Gabriela Cid
+	Developers:	Ben Ratliff, Tom Sunshine
+*/
+
+@charset "UTF-8";
+/* CSS Document */
+
+@font-face {
+	font-family: 'ProximaNovaA-Thin';
+	src: url('../webfonts/22F38D_0_0.eot');
+	src: url('../webfonts/22F38D_0_0.eot?#iefix') format('embedded-opentype'), url('../webfonts/22F38D_0_0.woff') format('woff'), url('../webfonts/22F38D_0_0.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'ProximaNovaS-Thin';
+	src: url('../webfonts/22F38D_1_0.eot');
+	src: url('../webfonts/22F38D_1_0.eot?#iefix') format('embedded-opentype'), url('../webfonts/22F38D_1_0.woff') format('woff'), url('../webfonts/22F38D_1_0.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'ProximaNovaS-Light';
+	src: url('../webfonts/22F38D_2_0.eot');
+	src: url('../webfonts/22F38D_2_0.eot?#iefix') format('embedded-opentype'), url('../webfonts/22F38D_2_0.woff') format('woff'), url('../webfonts/22F38D_2_0.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'ProximaNovaA-Light';
+	src: url('../webfonts/22F38D_3_0.eot');
+	src: url('../webfonts/22F38D_3_0.eot?#iefix') format('embedded-opentype'), url('../webfonts/22F38D_3_0.woff') format('woff'), url('../webfonts/22F38D_3_0.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'ProximaNovaT-Thin';
+	src: url('../webfonts/22F38D_4_0.eot');
+	src: url('../webfonts/22F38D_4_0.eot?#iefix') format('embedded-opentype'), url('../webfonts/22F38D_4_0.woff') format('woff'), url('../webfonts/22F38D_4_0.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'ProximaNova-Light';
+	src: url('../webfonts/22F38D_5_0.eot');
+	src: url('webfonts/22F38D_5_0.eot?#iefix') format('embedded-opentype'), url('../webfonts/22F38D_5_0.woff') format('woff'), url('../webfonts/22F38D_5_0.ttf') format('truetype');
+}
+html, body {
+	margin-left: auto;
+	margin-right:auto;
+	margin-top:0px;
+	height:100%;
+	padding:0px;
+	font-family:ProximaNova-Light, Arial, Helvetica, sans-serif;
+	font-size:100%;
+	background: #7ebde6;
+}
+body {
+	position:relative;
+	display:none;
+}
+#wrapper {
+	background:url(../images/mobile/bg_v2.jpg) no-repeat #7ebde6;
+	background-size:100%;
+	width:100%;
+	margin: 0px auto;
+	position:relative;
+	height:7800px;
+	z-index:3;
+}
+#menu {
+	background:url(../images/mobile/nav_bg.gif);
+	background-position:fixed;
+	position:fixed;
+	height:420px;
+	width:100%;
+	top:0;
+	left:0;
+	text-align:center;
+	z-index:50;
+	display:none;
+	padding:60px 0 0 0;
+}
+#cd_logo {
+	margin:0 auto;/*margin:0 120px;*/
+}
+#clouds1 {
+	display:none;
+}
+#clouds2 {
+	display:none;
+}
+#flares {
+	display:none;
+}
+#smog {
+	display:none;
+}
+#top_nav_bg {
+	display:none;
+}
+.legal {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:0.5em;
+	color:#fff;
+	width:320px;
+	margin:8px 0px 0px 0px;
+}
+/* mobile specific style */
+
+
+#mobile_div {
+	background:url(../images/mobile/navbar_bg.png);
+	height:60px;
+	width:369px;
+	position:fixed;
+	z-index: 10000;
+	top:0;
+	text-align:center;
+}
+#mobile_home_btn {
+	float: right;
+	width:250px;
+	height:45px;
+	margin:0 10px 0 0;
+}
+#diesel_li {
+	display:none;
+}
+#menu_btn {
+	width:40px;
+	height:26px;
+	background:url(../images/mobile/menu_btn.png);
+	cursor:pointer;
+	margin:3px 0 0 8px;
+	float:left;
+	position:absolute;
+	z-index:1000;
+	top:0px;
+}
+.new_button {
+	width:36px;
+	height:24px;
+	background:url(../images/mobile/menu_btn.png);
+	cursor:pointer;
+	margin:5px 0 0 5px;
+	float:left;
+	position:fixed;
+	z-index:1000;
+	top:0px;
+	left:150px;
+}
+.mobile_left {
+	position:fixed;
+	top:200px;
+	left:0;
+	width:23px;
+	height:38px;
+	background:url(../images/mobile/back_left_mobile.png);
+	z-index:500;
+	cursor:pointer;
+	display:none;
+}
+.mobile_right {
+	position:fixed;
+	top:200px;
+	left:300px;
+	width:23px;
+	height:38px;
+	background:url(../images/mobile/back_right_mobile.png);
+	z-index:500;
+	cursor:pointer;
+	display:none;
+}
+#mobile_social{
+	margin:10px auto;
+	width:70px;
+}
+
+#facebook_mobile {
+	width:26px;
+	height:26px;
+	background:url('../images/fb_badge.png');
+		float:right;
+}
+
+#custom-tweet-button {
+	float:left;
+}
+
+
+.back_right {
+	position:relative;
+}
+.back_left {
+	position:relative;
+}
+.horiz_divider {
+	height:4px;
+	width:100%;
+	background:url(../images/mobile/divider.png) no-repeat;
+	margin:10px 0 0 0;
+}
+li#share_links {
+	height:150px;
+}
+ul#menu li {
+	list-style:none;
+	color:#000;
+	text-decoration:none;
+	height:24px;
+	background:url(../images/mobile/nav_item_bg.png) no-repeat;
+	padding:15px 0 0 0;
+}
+ul#menu li a {
+	color:#000;
+	text-decoration:none;
+	width:380px;
+}
+#superContainer {
+	position:absolute;
+	overflow:hidden;
+	width:320px;
+	height:7800px;
+	z-index:5;
+}
+.sectionContent {
+	width:320px;
+	text-align:center;
+	margin:1em auto;
+}
+.panel {
+	float:left;
+	position:relative;
+	width:320px;
+	height:1400px;
+	text-align:center;
+	margin:0 200px;
+	/*border: 1px solid #fC0;*/
+	padding:0;
+}
+h1 {
+	width:280px;
+	margin:30px auto 10px auto;
+	font-size:1.6em;
+	font-family:ProximaNovaS-Bold, Arial, Helvetica, sans-serif;
+	font-weight:normal;
+	text-shadow: 0px 1px 3px #666;
+	color: #fff;
+	text-decoration:none;
+	text-transform:uppercase;
+}
+h2 {
+	padding:0px 30px;
+	font-family:ProximaNovaS-Bold, Arial, Helvetica, sans-serif;
+	margin:0;
+	font-size: 1em;
+	font-weight:500;
+	text-shadow: 1px 1px 1px #666;
+	color: #fff;
+	width:260px;
+}
+#moveleft {
+	margin:3px 0px;
+}
+#moveright {
+	margin:3px 0px;
+}
+.firstpanel {
+	text-align:center;
+	padding:100px 0 0 0;
+}
+.firstpanel h1 {
+	margin:0px auto 10px auto;
+	font-size:1.6em;
+	width:280px;
+	font-family:ProximaNovaS-Bold, Arial, Helvetica, sans-serif;
+	font-weight:normal;
+	text-shadow: 0px 1px 3px #666;
+	text-decoration:none;
+	color: #fff;
+	text-transform:uppercase;
+}
+.firstpanel h2 {
+	margin:15px 0px;
+	font-size: 1.1em;
+	font-weight:500;
+	text-shadow: 0px 1px 3px #666;
+	color: #fff;
+}
+#final_frame {
+	text-align:center;
+}
+.horizontal {
+	position:absolute;
+	overflow:hidden;
+	height:800px;
+	width:3500px;
+	left:-920px;
+}
+.sectionText {
+	font-family:ProximaNovaA-Regular, Arial, Helvetica, sans-serif;
+	width:280px;
+	text-align:center;
+	margin: 0px auto 5px auto;
+	text-shadow: 0px 1px 3px #666;
+	font-size:1em;
+	line-height:15px;
+}
+#mpg_frame {
+}
+#clean_diesel {
+	display:none;
+}
+#clean_diesel_home {
+	display:none;
+}
+#clean_diesel_frame {
+	left:-1200px;
+}
+#performance_frame {
+}
+#environment_frame {
+	padding:80px 0 0 0;
+}
+#partners_frame {
+	padding:60px 0 0 0;
+}
+.scroll_down {
+	cursor:pointer;
+	width:50px;
+	height:50px;
+	background:url(../images/mobile/scroll_down.png);
+	margin:300px auto 0px auto;
+	/*border:#fff solid 1px;*/
+position:relative;
+}
+#first_scroll {
+	margin:40px auto 0px auto;
+	cursor:pointer;
+	width:50px;
+	height:50px;
+	background:url(../images/mobile/scroll_down.png);
+	position:relative;
+}
+#container {
+	position:relative;
+	left:0;
+	width:7000px;
+	height:477px;
+	clear: both;
+}
+.content {
+	height:800px;
+	width:320px;
+	padding:0px;
+	color:#FFF;
+	font-family:Arial, Helvetica, sans-serif;
+}
+.innerText {
+	margin:0;
+	padding:250px 0 0 0;
+	width:768px;
+	text-align:center;
+}
+footer {
+	display:none;
+}
+#footer_ext {
+	display:none;
+}
+/* lateral buttons styles */
+
+.button_container {
+	text-align:center;
+	margin:0 auto;
+	width:200px;
+}
+.lateral_buttons_left {
+	float:left;
+	color:#FFF;
+	font-size: .6em;
+	/*text-shadow: 0px 1px 3px #666;*/
+	height:30px;
+	width:56px;
+	display:block;
+	padding:65px 0 0 0;
+	text-decoration:none;
+	margin:10px;
+}
+.lateral_buttons_right {
+	float:right;
+	color:#FFF;
+	font-size: .6em;
+	/*text-shadow: 0px 1px 3px #666;*/
+		height:30px;
+	width:56px;
+	padding: 65px 0 0 0;
+	text-decoration:none;
+	margin:10px;
+}
+.divider {
+	float:right;
+	margin:0 40px 0 0;
+}
+#tank_trips_btn {
+	background:url(../images/mobile/fuel_mobile.png) no-repeat;
+	background-position:0% 0%;
+}
+#tank_trips_btn:hover {
+	background:url(../images/mobile/fuel_mobile.png) no-repeat;
+	background-position:100% 0%;
+}
+#my_wallet_btn {
+	background:url(../images/mobile/wallet_mobile.png) no-repeat;
+	background-position:0% 0%;
+}
+#my_wallet_btn:hover {
+	background:url(../images/mobile/wallet_mobile.png) no-repeat;
+	background-position:100% 0%;
+}
+#watch_btn {
+	background:url(../images/mobile/watch_mobile.png) no-repeat;
+	background-position:0% 0%;
+}
+#watch_btn:hover {
+	background:url(../images/mobile/watch_mobile.png) no-repeat;
+	background-position:100% 0%;
+}
+#hear_btn {
+	background:url(../images/mobile/hear_mobile.png) no-repeat;
+	background-position:0% 0%;
+}
+#hear_btn:hover {
+	background:url(../images/mobile/hear_mobile.png) no-repeat;
+	background-position:100% 0%;
+}
+#oil_btn {
+	background:url(../images/mobile/oil_mobile_new.png) no-repeat;
+	background-position:0% 0%;
+	text-align:center;
+	width:75px;
+}
+#oil_btn:hover {
+	background:url(../images/mobile/oil_mobile_new.png) no-repeat;
+	background-position:100% 0%;
+}
+#smog_btn {
+	background:url(../images/mobile/smog_btn_mobile.png) no-repeat;
+	background-position:0% 0%;
+}
+#smog_btn:hover {
+	background:url(../images/mobile/smog_btn_mobile.png) no-repeat;
+	background-position:100% 0%;
+}
+.moveleft {
+	margin:10px 0px;
+	text-decoration:none;
+}
+.moveright {
+	margin:10px 0px;
+	text-decoration:none;
+}
+/*img.back_left {
+dispay:none;	
+}
+
+img.back_right {
+dispay:none;	
+}*/
+
+
+
+
+/*slider styles */
+ #sliders {
+	background:#306;
+}
+#sliderHolder {
+	text-align:left;
+	padding:0 0 0 20px;
+	width:1100px;
+}
+.slider {
+	background:none;
+	width:200px;
+	height:3.7em;
+	padding:-10px 10px 0px 10px;
+	border:none;
+}
+.slider_wrap {
+	background:url(../images/mobile/slider_bg_mobile.png) no-repeat;
+	width:320px;
+	margin:0 0 0 10px;
+	text-align:left;
+	padding: 0 0 0 4px;
+	border:none;
+}
+#errand_slider>.ui-state-default, #errand_slider>.ui-widget-content #errand_slider>.ui-state-default, #errand_slider>.ui-widget-header #errand_slider>.ui-state-default {
+	background:url(../images/mobile/errand_slider_mobile.png) no-repeat;
+	height:62px;
+	width:67px;
+	border:none;
+	cursor:pointer;
+	padding:0 -20px;
+}
+#errand_wrap {
+}
+#work_slider>.ui-state-default, #work_slider>.ui-widget-content #work_slider>.ui-state-default, #work_slider>.ui-widget-header #work_slider>.ui-state-default {
+	background:url(../images/mobile/work_slider_mobile.png) no-repeat;
+	height:62px;
+	width:67px;
+	border:none;
+	cursor:pointer;
+	padding:0 -20px;
+}
+#work_wrap {
+}
+#rec_slider>.ui-state-default, #rec_slider>.ui-widget-content #rec_slider>.ui-state-default, #rec_slider>.ui-widget-header #rec_slider>.ui-state-default {
+	background:url(../images/mobile/rec_slider_mobile.png) no-repeat;
+	height:62px;
+	width:67px;
+	border:none;
+	cursor:pointer;
+	padding:0 -20px;
+}
+#rec_wrap {
+}
+#other_slider>.ui-state-default, #other_slider>.ui-widget-content #other_slider>.ui-state-default, #other_slider>.ui-widget-header #other_slider>.ui-state-default {
+	background:url(../images/mobile/other_slider_mobile.png) no-repeat;
+	height:65px;
+	width:67px;
+	border:none;
+	cursor:pointer;
+	padding:0 -20px;
+}
+
+#other_wrap {
+}
+#fuel_result {
+	float:left;
+	margin:0 0 0 20px;
+	font-size:.85em;
+}
+#diesel_result {
+	float:right;
+	margin:0 20px 0 0;
+	font-size:.85em;
+}
+.result_wrapper {
+	background:url(../images/enter_field_bg.png);
+	padding:5px;
+	width:112px;
+	margin:0px 0px 0px 0px;
+}
+.result_box {
+	margin:0;
+	background:#000;
+	color:#fff;
+	height:20px;
+	font-size:1.2em;
+	font-family:ProximaNova-Light, Arial, Helvetica, sans-serif;
+	text-align:left;
+	padding:3px 0 0 10px;
+	width:100px;
+	background-image: -ms-linear-gradient(top, #666666 0%, #0D0D0D 100%);
+	background-image: -moz-linear-gradient(top, #666666 0%, #0D0D0D 100%);
+	background-image: -o-linear-gradient(top, #666666 0%, #0D0D0D 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #666666), color-stop(1, #0D0D0D));
+	background-image: -webkit-linear-gradient(top, #666666 0%, #0D0D0D 100%);
+	background-image: linear-gradient(to bottom, #666666 0%, #0D0D0D 100%);
+}
+.mpg_results_text {
+	width:105px;
+	/*text-shadow: -1px 0px #333;*/
+	margin:-10px 0 0 0 ;
+	padding:0 10px;
+	font-size:.7em;
+}
+/*enter your state styles*/
+#mpg_right {
+}
+#twentyfive_wrap {
+	width:200px;
+	height:150px;
+	background:url(../images/mobile/25_percent_mobile.png) no-repeat;
+	margin:10px 60px;
+	position:relative;
+}
+#twentyfive_text {
+	position:absolute;
+	text-transform:uppercase;
+	font-size:.7em;
+	/*text-shadow: 0px 1px 3px #666;*/
+	top:98px;
+}
+#circle_container {
+	overflow:hidden;
+	width:10px;
+	height:100px;
+	position:relative;
+}
+#circle {
+	left:65px;
+	top:5px;
+	width:82px;
+	height:86px;
+	background:url(../images/mobile/25_sliver_mobile.png) no-repeat;
+	position:absolute;
+}
+#savings_wrap {
+	width:185px;
+	margin:0 65px 0px 65px;
+	padding:0;
+}
+#savings_container {
+	padding:2px 0px;
+	width:180px;
+	background:url(../images/savings_bg.png);
+	margin:20px 0 20px 0;
+}
+#savings {
+	background:#000;
+	color:#fff;
+	width:9.6em;
+	margin:2px auto;
+	font-size:1em;
+	text-align:left;
+	padding: 5px;
+}
+#enter_state_wrap {
+	width:175px;
+	margin:20px 0 0 0;
+	display:block;
+}
+input#state {
+	background:#000;
+	color:#fff;
+	font-size:.6em;
+	width:160px;
+	height:22px;
+	border:none;
+	margin:0;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+}
+span#annual_savings {
+	text-transform:uppercase;
+	font-size:.7em;/*text-shadow: 0px 1px 3px #666;*/
+}
+#state_wrap {
+	background:url(../images/enter_field_bg.png);
+	padding:5px 1px;
+	width:180px;
+	margin:40px 60px;
+	position:relative;
+}
+#state_submit {
+	top:0;
+	left:160px;
+	margin: 0 auto;
+	cursor:pointer;
+	padding:0;
+	z-index:20;
+	width:27px;
+	height:36px;
+	background:url(../images/mobile/state_submit_mobile.png);
+	position:absolute;
+}
+ul.ui-autocomplete.ui-menu.ui-widget.ui-widget-content.ui-corner-all {
+	width:7em;
+	background:#FFF;
+}
+li.ui-menu-item {
+	padding: 3px 0;
+	width:7em;
+	font-size:.8em;
+	white-space: nowrap;
+}
+.spacer {
+	font-size:11px;
+}
+/* styles for performance section */
+
+/*#performance_center h1 {
+margin-top:20;	
+}
+
+#mpg_center h1 {
+margin-top:20;	
+}*/
+
+/* styles for the diesel sounds section */
+
+#ie_sounds {
+	display:none;
+}
+.speaker {
+	height:80px;
+	margin:5px 35px;
+	width:70px;
+	height:88px;
+}
+#playMotor1 {
+	cursor:pointer;
+	background:url(../images/mobile/old_diesel_mobile.png) no-repeat;
+	float:left;
+}
+#playMotor2 {
+	float:right;
+	cursor:pointer;
+	background:url(../images/mobile/clean_diesel_mobile.png) no-repeat;
+}
+.meter {
+	width:2px;
+	height:80px;
+	float:left;
+	margin: 0 1px;
+}
+#meterbg {
+	background: url(../images/mobile/meter_bg_mobile.png) no-repeat 0% 0%;
+	margin:10px auto;
+	width:240px;
+	padding: 0 0 0 7px;
+	height:63px;
+	position:relative;
+}
+#meterContainer {
+	top:12px;
+	overflow:hidden;
+	height:45px;
+	width:365px;
+	position:absolute;
+	margin:0 auto;
+}
+.blue {
+	background:url(../images/blue_bar.png) no-repeat;
+	width:14px;
+}
+.grey {
+	background:url(../images/grey_bar.png) no-repeat;
+	width:14px;
+}
+#meter1 {
+	margin-top:4px;
+}
+#meter2 {
+	margin-top:6px;
+}
+#meter3 {
+	margin-top:10px;
+}
+#meter4 {
+	margin-top:7px;
+}
+#meter5 {
+	margin-top:13px;
+}
+#meter6 {
+	margin-top:7px;
+}
+#meter7 {
+	margin-top:10px;
+}
+#meter8 {
+	margin-top:4px;
+}
+#meter9 {
+	margin-top:7px;
+}
+#meter10 {
+	margin-top:12px;
+}
+#meter11 {
+	margin-top:8px;
+}
+#meter12 {
+	margin-top:12px;
+}
+#meter13 {
+	margin-top:3px;
+}
+#meter14 {
+	margin-top:5px;
+}
+#meter15 {
+	display:none;
+}
+#meter16 {
+	display:none;
+}
+/* smog page styles */
+#smog_bg {
+	position:absolute;
+	margin: 0 0 30px 30px;
+	z-index:11;
+	height:30px;
+	width:300px;
+	padding:0;
+	background:url(../images/mobile/smog_slider_bg_mobile.png) no-repeat;
+}
+#slideText {
+	left:90px;
+	position:absolute;
+	z-index:500;
+	top:300px;
+}
+#smog_slider {
+	margin: 0 0 0 0px;
+	height:30px;
+	width:210px;
+	padding:0px 10px;
+	position:absolute;
+	z-index:100;
+}
+#smog_mobile {
+	background:url(../images/mobile/smog_mobile.png);
+	margin: 0;
+	height:100%;
+	width:100%;
+	padding:0px;
+	position:absolute;
+	z-index:10;
+}
+#smog {
+	top:0;
+	height:100%;
+	width:100%;
+	background:url(../images/mobile/smog_mobile.png) no-repeat;
+	z-index:10;
+	display:none;
+}
+#smog_back {
+	position:absolute;
+	z-index:15;
+	left:140px;
+	top:310px;
+}
+#smog_slider>.ui-state-default, #smog_slider>.ui-widget-content #smog_slider>.ui-state-default, #smog_slider>.ui-widget-header #other_slider>.ui-state-default {
+	background:url(../images/mobile/smog_slider_mobile.png) no-repeat;
+	height:70px;
+	width:67px;
+	border:none;
+	cursor:pointer;
+	padding:0 -20px;
+	margin:-15px 0 0 0;
+}
+/* car animation */
+#animation_wrap {
+	width:320px;
+	height:350px;
+	overflow:hidden;
+	margin:0 0 0 0;
+	position:relative;
+}
+#animation {
+	background:url(../images/mobile/roadway_150.png) repeat-x;
+	width:8280px;
+	height:350px;
+	position:absolute;
+	top:0;
+}
+#go_button {
+	margin:-250px 0px 0px 150px;
+	position:absolute;
+	top:560px;
+	left:-20px;
+}
+#animation_back {
+	margin:-260px 150px 0 0;
+	float:right;
+}
+#car {
+	background:url(../images/car_small.png) no-repeat;
+	width:109px;
+	height:40px;
+	position:absolute;
+	margin:100px 0 0 0;
+}
+
+/*oil barrel animation*/
+
+.barrel {
+	float:left;
+	margin:5px;
+	display:none;
+}
+#barrels {
+	margin:0;
+	min-height:120px;
+	width:320px;
+	text-align:center;
+	margin: 0 auto;
+}
+#single_barrel {
+	background:url(../images/big_barrel.png);
+	height:113px;
+	width:81px;
+	margin:10px 0 10px 100px;
+	float:left;
+}
+#oil_wrap {
+	overflow:hidden;
+	height:96px;
+	width:81px;
+}
+#oil {
+	margin-top:60px;
+}
+span#oil_text {
+	float:right;
+	margin:40px 0 0 0;
+	font-size:.7em;
+	letter-spacing:0px;
+	text-align:left;
+	line-height:1.1em;
+	/*text-shadow: 0px 1px 3px #666;*/
+	width:80px;
+}
+span.sources_text {
+	font-size:.6em;
+	color:#fff;
+	margin:-10px 0 0 0;
+	padding:0;
+}
+
+span.oil_sources a{
+  color:#fff;
+  text-decoration:underline;
+  }
+
+span.sources_text a{
+	color:#fff;
+	text-decoration:underline;
+}
+
+/* partners frame */
+
+.show_car {
+	display:none;
+}
+#partners_frame {
+	text-align:center;
+	padding:0;
+	margin:0;
+	height:800px;
+}
+#final_frame {
+	position:absolute;
+	overflow:hidden;
+	height:800px;
+}
+#partnerText {
+	text-align:center;
+	margin:20px 15px;
+}
+ul#partners > li {
+	height:72px;
+	width: 320px;
+	background: url(../images/mobile/divider.png) top no-repeat;
+	margin:0;
+	pointer:cursor;
+	list-style:none;
+}
+#partner_bar {
+	position:relative;
+}
+ul#partner_list {
+	position:relative;
+	list-style:none;
+	display:none;
+}
+.partner_links {
+	height:70px;
+	width: 320px;
+	font-size:1em;
+	margin:0;
+	font-family:ProximaNovaS-Bold, Arial, Helvetica, sans-serif;
+	font-weight:normal;
+	text-shadow: 0px 1px 3px #666;
+	text-decoration:none;
+	color:#fff;
+	padding:20px 0 0 100px;
+	text-align:left;
+}
+.partner_links span{
+	font-size:1.3em;
+}
+#mobile_partner_list li a {
+	text-decoration:none;
+	color:#fff;
+}
+#audi {
+	background:url(../images/mobile/partners_audi_mobile.png) no-repeat;
+}
+#bmw {
+	background:url(../images/mobile/partners_bmw_mobile.png) no-repeat;
+}
+#bosch {
+	background:url(../images/mobile/partners_bosch_mobile.png) no-repeat;
+}
+#benz {
+	background:url(../images/mobile/partners_benz_mobile.png) no-repeat;
+}
+#porsche {
+	background:url(../images/mobile/partners_porsche_mobile.png) no-repeat;
+}
+#vw {
+	background:url(../images/mobile/partners_vw_mobile.png) no-repeat;
+}
+/* info frame */
+
+#info_frame {
+	padding:1px 0 0 0;
+	margin:0;
+	text-align:left;
+}
+.info_text a, .info_text a:visited, .info_text a:active, .info_text a:hover {
+	color:black;
+	text-decoration:none;
+}
+.info_text h2 {
+	text-transform:uppercase;
+	margin:0;
+	padding:0;
+	text-shadow:none;
+}
+#info_frame p {
+	margin-top: 10px;
+}
+#info_inner {
+	/*position:absolute;
+	overflow:hidden;*/
+	text-align:left;
+	padding:0;
+	font-size:1em;
+	margin: 20px;
+}
+.info_text {
+	text-align:left;
+	text-shadow:none;
+	font-weight:200;
+	width:270px;
+}
+#final_header {
+	margin:70px auto 10px auto;
+}
+h1#infoHeader {
+	font-size:1.7em;
+	margin:60px auto 20px auto;
+	font-family:ProximaNovaS-Bold, Arial, Helvetica, sans-serif;
+	font-weight:normal;
+	text-align:center;
+}
+ul.info_list > li {
+	height:50px;
+	width:300px;
+	background:url(../images/mobile/info_link_bg.png);
+	margin:0 0 0 -15px;
+}
+ul.info_list > li a > div {
+	height:30px;
+	width:260px;
+	padding:15px 0 0 15px;
+}
+ul.info_list > li a {
+	color:white;/*text-shadow: 0px 1px 3px #666;*/
+}
+.info_divider {
+	height:15px;
+	width:300px;
+	margin:18px 0 0 -10px;
+}
+.vert_divider {
+	display:none;
+}
+.download {
+	background:url(../images/download_btn.png) no-repeat;
+	width:45px;
+	height:50px;
+	margin:10px auto 40px auto;
+}
+#mpg_header {
+	background:url(../images/mobile/info_mpg_mobile.png) no-repeat;
+}
+#enviro_header {
+	background:url(../images/mobile/info_environ_header.png) no-repeat;
+}
+#perform_header {
+	background:url(../images/mobile/info_perf_mobile.png) no-repeat;
+}
+#partner_header {
+	background:url(../images/mobile/info_partners_header.png) no-repeat;
+}
+.clear {
+	clear:both;
+}
