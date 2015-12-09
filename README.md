@@ -1,2 +1,2 @@
 # clean-diesel
-A site for the Clean Diesel iniative
+Web site for Clean Diesel initiative
